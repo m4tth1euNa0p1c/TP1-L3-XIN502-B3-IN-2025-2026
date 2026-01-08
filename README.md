@@ -46,19 +46,21 @@ curl http://localhost:8080/bonjour
 
 ### Docker Hub
 
+**Image publiée** : `matthkernel/rentalservice-tp:latest`
+
 ```bash
 # Connexion à Docker Hub
 docker login
 
 # Tag de l'image
-docker tag rentalservice-tp <DOCKERHUB_USERNAME>/rentalservice-tp:latest
+docker tag rentalservice-tp matthkernel/rentalservice-tp:latest
 
 # Push de l'image
-docker push <DOCKERHUB_USERNAME>/rentalservice-tp:latest
+docker push matthkernel/rentalservice-tp:latest
 
 # Pull de l'image (depuis n'importe quelle machine)
-docker pull <DOCKERHUB_USERNAME>/rentalservice-tp:latest
+docker pull matthkernel/rentalservice-tp:latest
 
 # Run depuis Docker Hub
-docker run --rm -p 8080:8080 <DOCKERHUB_USERNAME>/rentalservice-tp:latest
+docker run --rm -p 8080:8080 matthkernel/rentalservice-tp:latest
 ```
